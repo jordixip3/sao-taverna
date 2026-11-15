@@ -1,0 +1,49 @@
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  box-sizing: border-box;
+  background: rgba(10, 24, 16, 0.95);
+  padding: 1.2rem 2rem;
+  border-bottom: 1px solid rgba(200, 159, 87, 0.3);
+}
+
+.lang-selector {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.lang-btn {
+  background: transparent;
+  color: #b3c1b8;
+  border: 1px solid rgba(200, 159, 87, 0.3);
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.85rem;
+  transition: all 0.3s ease;
+}
+
+.lang-btn:hover {
+  color: var(--primary-gold, #c89f57);
+  border-color: var(--primary-gold, #c89f57);
+  background: rgba(200, 159, 87, 0.05);
+}
+
+.lang-btn.active {
+  background: var(--primary-gold, #c89f57);
+  color: #0e2216;
+  border-color: var(--primary-gold, #c89f57);
+  box-shadow: 0 0 8px rgba(200, 159, 87, 0.4);
+}
+
+@media (max-width: 600px) {
+  .app-header {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+    padding: 1rem;
+  }
+}

@@ -1,0 +1,108 @@
+/* src/index.css */
+
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap');
+
+:root {
+  --primary-gold: #c89f57;
+  --accent-gold: #e5ba73;
+  --bg-dark-green: #0e2216;
+  --bg-dark-green-gradient: linear-gradient(135deg, #0a1810 0%, #122c1d 100%);
+  --background-light: #faf8f5;
+  --text-light: #ffffff;
+  --text-dark: #1b2520;
+  --text-muted: #6b7c72;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Outfit', sans-serif;
+  background: var(--bg-dark-green-gradient);
+  color: var(--text-light);
+  height: 100%;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Glassmorphism card */
+.glass-card {
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 14px;
+  padding: 2rem;
+  margin: 1rem;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+}
+
+header {
+  background: rgba(10, 24, 16, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(200, 159, 87, 0.3);
+  color: var(--text-light);
+  padding: 1.2rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary-gold);
+  letter-spacing: 1px;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+section.hero {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+section.hero h2 {
+  color: var(--primary-gold);
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+section.hero p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #d1ded6;
+}
+
+footer {
+  background: #060e0a;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  color: var(--text-muted);
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.95rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  header h1 { font-size: 1.6rem; }
+  section.hero h2 { font-size: 2rem; }
+  main { padding: 1rem 0.5rem; }
+}

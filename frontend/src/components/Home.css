@@ -1,0 +1,64 @@
+.home-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  color: var(--text-light);
+  font-family: 'Outfit', sans-serif;
+}
+
+.hero {
+  margin-bottom: 1.5rem;
+}
+
+/* Glass card text color */
+.glass-card {
+  color: var(--text-light);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.glass-card h2 {
+  color: var(--primary-gold, #c89f57);
+  font-size: 2.2rem;
+  margin-top: 0.5rem;
+}
+
+.glass-card h3 {
+  color: var(--accent-gold, #e5ba73);
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(200, 159, 87, 0.2);
+  padding-bottom: 0.3rem;
+  display: inline-block;
+}
+
+.info p {
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+.contact-details {
+  background: rgba(255, 255, 255, 0.02);
+  padding: 1rem;
+  border-radius: 8px;
+  border-left: 3px solid var(--primary-gold);
+}
+
+.map-wrapper iframe {
+  border: 0;
+  border-radius: 12px;
+  margin-top: 1.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 768px) {
+  .home-section {
+    padding: 0;
+  }
+  .glass-card {
+    padding: 1.5rem 1rem;
+  }
+}
+
